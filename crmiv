@@ -1,0 +1,60 @@
+let mapleader = "\<Space>"
+
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set number
+set showmode
+set showcmd
+
+" Fuzzy File Find
+" Do not know the reason exactly :D
+"syntax enable
+filetype plugin on
+
+" Display all matching when tab complete
+set wildmenu
+" To enable find act like **fuzzy file find**
+set path+=**
+" you can also use :b and search for a file infact open it.
+
+
+" Fuzzy File Find
+
+
+" TAGS
+command! MakeTags !ctags -R .
+" ^] to dive deeper!
+" ^t to rise up!
+" ~TAGS
+
+" AUTOCOMPLETE:
+" doc in |ins-completion|
+"
+" HIGHLIGHTS:
+" ^x^n for JUST this file
+" ^x^f for filenames ONLY
+" ^x^] for tags only
+" ^n or ^p changes the pop-up's order
+" ~AUTOCOMPLETE
+
+
+" SNIPPETS:
+nnoremap ,cmain :-1read /home/demirel/.vim/.cfolder/.skeleton.main.c<CR>5ji
+
+" TABS ^
+nnoremap tn :tabnew<Space>
+
+nnoremap tk :tabnext<CR>
+nnoremap tj :tabprev<CR>
+
+nnoremap th :tabfirst<CR>
+nnoremap tl :tablast<CR>
+
+nnoremap <leader>1 1gt
+nnoremap <leader>2 2gt
+nnoremap <leader>3 3gt
+nnoremap <leader>4 4gt
+nnoremap <leader>5 5gt
+"
+" TABS $
