@@ -45,6 +45,8 @@ nnoremap ,cmain :-1read /home/demirel/.vim/.cfolder/.skeleton.main.c<CR>5ji
 " TABS ^
 nnoremap tn :tabnew<Space>
 
+nnoremap tm :tabmove<Space>
+
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
 
